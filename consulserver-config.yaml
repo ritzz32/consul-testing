@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: consulserver-config
+  labels:
+    app: consulserver
+data:
+  extra-from-values.json: |-
+    {
+      "bind_addr": "0.0.0.0",
+      "client_addr": "0.0.0.0",
+      "acl": {
+        "enabled": true,
+        "default_policy": "deny",
+        "tokens": {
+          "master": "4d05c07715776972651a555afe"
+        }
+      },
+      "bootstrap_expect": 1,
+      "primary_datacenter": "dev-minikube",
+      "datacenter": "dev-minikube",
+      "domain": "consul",
+      "data_dir": "/consul/data",
+      "ui": true,
+      "server": true
+    }
