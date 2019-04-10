@@ -13,7 +13,8 @@ data:
         "enabled": true,
         "default_policy": "deny",
         "tokens": {
-          "master": "4d05c07715776972651a555afe"
+          "master": "1da63715-7d3e-475c-b2de-d8e61fd84f90",
+          "agent": "1da63715-7d3e-475c-b2de-d8e61fd84f90"
         }
       },
       "bootstrap_expect": 1,
